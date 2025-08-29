@@ -14,7 +14,14 @@ import {
   FaEnvelope,
   FaPhone,
 } from "react-icons/fa";
-import { SiJavascript, SiMysql, SiJenkins, SiGoland } from "react-icons/si";
+import {
+  SiJavascript,
+  SiMysql,
+  SiJenkins,
+  SiGoland,
+  SiPostman,
+  SiRedux,
+} from "react-icons/si";
 
 function App() {
   const skills = [
@@ -29,6 +36,14 @@ function App() {
     {
       icon: <FaNodeJs className="w-10 h-10 text-green-600" />,
       label: "Node.js",
+    },
+    {
+      icon: <SiRedux className="w-10 h-10 text-purple-500" />,
+      label: "Redux",
+    },
+    {
+      icon: <SiPostman className="w-10 h-10 text-orange-500" />,
+      label: "Postman",
     },
     { icon: <FaAws className="w-10 h-10 text-orange-500" />, label: "AWS" },
     { icon: <FaDocker className="w-10 h-10 text-blue-400" />, label: "Docker" },
