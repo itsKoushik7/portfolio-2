@@ -13,6 +13,9 @@ import {
   FaGithub,
   FaEnvelope,
   FaPhone,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -21,10 +24,14 @@ import {
   SiGoland,
   SiPostman,
   SiRedux,
+  SiTailwindcss,
 } from "react-icons/si";
 
 function App() {
   const skills = [
+    // Frontend
+    { icon: <FaHtml5 className="w-10 h-10 text-orange-600" />, label: "HTML5" },
+    { icon: <FaCss3Alt className="w-10 h-10 text-blue-500" />, label: "CSS3" },
     {
       icon: <SiJavascript className="w-10 h-10 text-yellow-400" />,
       label: "JavaScript",
@@ -33,18 +40,32 @@ function App() {
       icon: <FaReact className="w-10 h-10 text-blue-500" />,
       label: "React.js",
     },
+    { icon: <SiRedux className="w-10 h-10 text-purple-500" />, label: "Redux" },
+    {
+      icon: <SiTailwindcss className="w-10 h-10 text-sky-400" />,
+      label: "TailwindCSS",
+    },
+    {
+      icon: <FaBootstrap className="w-10 h-10 text-purple-600" />,
+      label: "Bootstrap",
+    },
+
+    // Backend
     {
       icon: <FaNodeJs className="w-10 h-10 text-green-600" />,
       label: "Node.js",
     },
+    { icon: <FaJava className="w-10 h-10 text-red-500" />, label: "Java" },
     {
-      icon: <SiRedux className="w-10 h-10 text-purple-500" />,
-      label: "Redux",
+      icon: <FaPython className="w-10 h-10 text-yellow-500" />,
+      label: "Python",
     },
-    {
-      icon: <SiPostman className="w-10 h-10 text-orange-500" />,
-      label: "Postman",
-    },
+    { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
+
+    // Databases
+    { icon: <SiMysql className="w-10 h-10 text-blue-600" />, label: "MySQL" },
+
+    // DevOps & Cloud
     { icon: <FaAws className="w-10 h-10 text-orange-500" />, label: "AWS" },
     { icon: <FaDocker className="w-10 h-10 text-blue-400" />, label: "Docker" },
     {
@@ -53,13 +74,10 @@ function App() {
     },
     { icon: <FaLinux className="w-10 h-10 text-black" />, label: "Linux" },
     { icon: <FaGitAlt className="w-10 h-10 text-orange-600" />, label: "Git" },
-    { icon: <SiMysql className="w-10 h-10 text-blue-600" />, label: "MySQL" },
-    { icon: <FaJava className="w-10 h-10 text-red-500" />, label: "Java" },
     {
-      icon: <FaPython className="w-10 h-10 text-yellow-500" />,
-      label: "Python",
+      icon: <SiPostman className="w-10 h-10 text-orange-500" />,
+      label: "Postman",
     },
-    { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
   ];
 
   const experiences = [
