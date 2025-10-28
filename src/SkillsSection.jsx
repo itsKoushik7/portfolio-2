@@ -319,11 +319,11 @@ export default function SkillsSection() {
       label: "Express.js",
     },
     { icon: <FaJava className="w-10 h-10 text-red-500" />, label: "Java" },
-    {
-      icon: <FaPython className="w-10 h-10 text-yellow-500" />,
-      label: "Python",
-    },
-    { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
+    // {
+    //   icon: <FaPython className="w-10 h-10 text-yellow-500" />,
+    //   label: "Python",
+    // },
+    // { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
     { icon: <SiMysql className="w-10 h-10 text-blue-600" />, label: "MySQL" },
     {
       icon: <SiPostgresql className="w-10 h-10 text-blue-800" />,
@@ -331,10 +331,10 @@ export default function SkillsSection() {
     },
     { icon: <FaAws className="w-10 h-10 text-orange-500" />, label: "AWS" },
     { icon: <FaDocker className="w-10 h-10 text-blue-400" />, label: "Docker" },
-    {
-      icon: <SiJenkins className="w-10 h-10 text-red-600" />,
-      label: "Jenkins",
-    },
+    // {
+    //   icon: <SiJenkins className="w-10 h-10 text-red-600" />,
+    //   label: "Jenkins",
+    // },
     { icon: <FaLinux className="w-10 h-10 text-black" />, label: "Linux" },
     { icon: <FaGitAlt className="w-10 h-10 text-orange-600" />, label: "Git" },
     {
