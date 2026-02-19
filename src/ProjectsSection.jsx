@@ -6,26 +6,33 @@ import { motion } from "framer-motion";
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Portfolio Website",
-      link: "https://laxmikoushik-n.vercel.app/",
-      desc: "My personal portfolio showcasing my skills, projects, and professional experience. Built with React, Framer Motion, and Tailwind CSS with modern animations.",
-      tech: "React.js, TailwindCSS, Framer Motion, JavaScript, HTML5, CSS3",
+      title: "ClassPulse – School Management System",
+      link: "https://class-pulse-n.vercel.app/",
+      desc: "Multi-tenant SaaS platform with RBAC for admins, teachers, and parents. Features attendance tracking, exam analytics, and report cards.",
+      tech: "React.js, Tailwind CSS, Drizzle ORM, NeonDB, Clerk Auth, Recharts",
     },
     {
-      title: "Node.js App Deployment on AWS EC2",
-      desc: "Deployed a full-stack Node.js app on AWS EC2 using SSH, GitHub & PM2 for uptime.",
-      tech: "AWS EC2, IAM, S3, PM2, GitHub, Node.js, Linux, Shell Scripting",
+      title: "Casyomax – AI Caregiving Assistant",
+      link: "https://jolly-bay-0b0d3440f.2.azurestaticapps.net/",
+      desc: "Voice-enabled AI assistant for caregiving. Handles scheduling, email drafting, and context-aware workflows using Azure AI.",
+      tech: "React Native, Node.js, PostgreSQL, Azure AI Foundry, Azure OpenAI, Azure Speech Services",
     },
     {
       title: "Study Broo – Student Assistance Platform",
-      link: "https://study-broo.vercel.app",
-      desc: "Full-stack web app for exam prep, resume creation, and project collaboration. Includes ML + LLM features.",
-      tech: "Node.js, Express, MySQL, React.js, Tailwind, Groq API, PDFKit",
+      link: "https://study-broo.vercel.app/",
+      desc: "Full-stack app for exam prep and resume building. Features hybrid ML question classification and LLM-powered notes generation.",
+      tech: "React.js, Tailwind CSS, Node.js, MySQL, Groq API, PDFKit",
+    },
+    {
+      title: "Fairneft – Loan & Finance Platform",
+      link: "https://fairneft.com/",
+      desc: "Modular React SPA with response UI for loan management. Features complex forms, data visualization, and PDF generation.",
+      tech: "React.js, Vite, Tailwind CSS, Material UI, Formik, Yup, ECharts",
     },
     {
       title: "Learnity – E-Learning Platform",
-      desc: "React-based platform with role-based routing, modular components, and real-time tracking.",
-      tech: "React.js, JavaScript ES6, REST APIs, HTML5, CSS3",
+      desc: "React-based e-learning platform with role-based routing and modular architecture.",
+      tech: "React.js, JavaScript, REST APIs, HTML5, CSS3",
     },
   ];
   return (

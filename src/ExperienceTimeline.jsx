@@ -7,25 +7,32 @@ import { FaCircle } from "react-icons/fa";
 export default function ExperienceTimeline() {
   const experiences = [
     {
-      company: "Cognizant Technology, Coimbatore",
-      role: "Programmer Analyst",
-      period: "May 2025 – June 2025",
-      details: ["Hands-on experience in Java and manual testing."],
+      company: "LotusSphereAI, Hyderabad",
+      role: "Software Engineer",
+      period: "Sept 2025 – Present",
+      details: [
+        "Developed and maintained scalable web and mobile applications using React Native and Node.js.",
+        "Collaborated with the team to integrate machine learning models into user-facing products.",
+        "Focused on optimizing frontend performance and ensuring seamless data flow between client-side and backend.",
+      ],
     },
     {
       company: "Elbert Technology Pvt Ltd, Hyderabad",
       role: "Software Engineer",
       period: "Dec 2024 – May 2025",
       details: [
-        "Developed scalable, responsive UIs with React.js.",
+        "Gained hands-on experience in developing scalable, responsive UIs with React.js.",
         "Ensured clean code, API integration, and performance optimization.",
       ],
     },
     {
       company: "Zemoso Technologies, Hyderabad",
-      role: "Developer Intern",
+      role: "Software Engineer",
       period: "Aug 2024 – Oct 2024",
-      details: ["Worked on software development projects as an intern."],
+      details: [
+        "Built web applications end-to-end using React.js.",
+        "Leveraged Material UI and Tailwind CSS to create modern, responsive, and user-friendly interfaces.",
+      ],
     },
   ];
   return (

@@ -1,388 +1,159 @@
-// /* eslint-disable no-unused-vars */
-// "use client";
-// import { motion } from "framer-motion";
-// import {
-//   FaReact,
-//   FaNodeJs,
-//   FaAws,
-//   FaDocker,
-//   FaLinux,
-//   FaJava,
-//   FaPython,
-//   FaGitAlt,
-//   FaHtml5,
-//   FaCss3Alt,
-//   FaBootstrap,
-// } from "react-icons/fa";
-// import {
-//   SiJavascript,
-//   SiMysql,
-//   SiJenkins,
-//   SiGoland,
-//   SiPostman,
-//   SiRedux,
-//   SiTailwindcss,
-//   //   SiVscode,
-//   SiVite,
-//   SiExpress,
-//   SiPostgresql,
-//   SiOpenai,
-// } from "react-icons/si";
-
-// export default function SkillsSection() {
-//   const skills = [
-//     { icon: <FaHtml5 className="w-10 h-10 text-orange-600" />, label: "HTML5" },
-//     { icon: <FaCss3Alt className="w-10 h-10 text-blue-500" />, label: "CSS3" },
-//     {
-//       icon: <SiJavascript className="w-10 h-10 text-yellow-400" />,
-//       label: "JavaScript",
-//     },
-//     {
-//       icon: <FaReact className="w-10 h-10 text-blue-500" />,
-//       label: "React.js",
-//     },
-//     { icon: <SiRedux className="w-10 h-10 text-purple-500" />, label: "Redux" },
-//     {
-//       icon: <SiTailwindcss className="w-10 h-10 text-sky-400" />,
-//       label: "TailwindCSS",
-//     },
-//     {
-//       icon: <FaBootstrap className="w-10 h-10 text-purple-600" />,
-//       label: "Bootstrap",
-//     },
-//     {
-//       icon: <FaNodeJs className="w-10 h-10 text-green-600" />,
-//       label: "Node.js",
-//     },
-//     {
-//       icon: <SiExpress className="w-10 h-10 text-gray-600" />,
-//       label: "Express.js",
-//     },
-//     { icon: <FaJava className="w-10 h-10 text-red-500" />, label: "Java" },
-//     {
-//       icon: <FaPython className="w-10 h-10 text-yellow-500" />,
-//       label: "Python",
-//     },
-//     { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
-//     { icon: <SiMysql className="w-10 h-10 text-blue-600" />, label: "MySQL" },
-//     {
-//       icon: <SiPostgresql className="w-10 h-10 text-blue-800" />,
-//       label: "PostgreSQL",
-//     },
-//     { icon: <FaAws className="w-10 h-10 text-orange-500" />, label: "AWS" },
-//     { icon: <FaDocker className="w-10 h-10 text-blue-400" />, label: "Docker" },
-//     {
-//       icon: <SiJenkins className="w-10 h-10 text-red-600" />,
-//       label: "Jenkins",
-//     },
-//     { icon: <FaLinux className="w-10 h-10 text-black" />, label: "Linux" },
-//     { icon: <FaGitAlt className="w-10 h-10 text-orange-600" />, label: "Git" },
-//     {
-//       icon: <SiPostman className="w-10 h-10 text-orange-500" />,
-//       label: "Postman",
-//     },
-//     // { icon: <SiVscode className="w-10 h-10 text-blue-600" />, label: "VSCode" },
-//     { icon: <SiVite className="w-10 h-10 text-purple-400" />, label: "Vite" },
-//     {
-//       icon: <SiOpenai className="w-10 h-10 text-teal-500" />,
-//       label: "GPT/AI Tools",
-//     },
-//   ];
-
-//   return (
-//     <section className="min-h-screen py-16 flex flex-col mx-50">
-//       <h2 className="text-3xl font-bold text-center mb-10">Technical Skills</h2>
-
-//       <div className="flex-1 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-8 justify-items-center content-evenly">
-//         {skills.map((skill, i) => (
-//           <motion.div
-//             key={i}
-//             className="flex flex-col items-center cursor-pointer p-2 rounded-lg"
-//             initial={{ opacity: 0, y: 20, scale: 0.9 }}
-//             animate={{ opacity: 1, y: 0, scale: 1 }}
-//             transition={{
-//               delay: i * 0.1,
-//               duration: 0.5,
-//               ease: "easeOut",
-//             }}
-//             whileHover={{
-//               scale: 1.3,
-//               rotate: 360,
-//               transition: { duration: 0.6, ease: "easeOut" },
-//             }}
-//           >
-//             <motion.div
-//               animate={{
-//                 y: [0, -5, 0],
-//                 rotate: [0, 10, -10, 0],
-//               }}
-//               transition={{
-//                 duration: 4,
-//                 repeat: Infinity,
-//                 repeatType: "mirror",
-//                 ease: "easeInOut",
-//               }}
-//             >
-//               {skill.icon}
-//             </motion.div>
-//             <p className="text-sm mt-2">{skill.label}</p>
-//           </motion.div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
 /* eslint-disable no-unused-vars */
-// "use client";
-// import { motion } from "framer-motion";
-// import {
-//   FaReact,
-//   FaNodeJs,
-//   FaAws,
-//   FaDocker,
-//   FaLinux,
-//   FaJava,
-//   FaPython,
-//   FaGitAlt,
-//   FaHtml5,
-//   FaCss3Alt,
-//   FaBootstrap,
-// } from "react-icons/fa";
-// import {
-//   SiJavascript,
-//   SiMysql,
-//   SiJenkins,
-//   SiGoland,
-//   SiPostman,
-//   SiRedux,
-//   SiTailwindcss,
-//   SiVite,
-//   SiExpress,
-//   SiPostgresql,
-//   SiOpenai,
-// } from "react-icons/si";
-
-// export default function SkillsSection() {
-//   const skills = [
-//     { icon: <FaHtml5 className="w-10 h-10 text-orange-600" />, label: "HTML5" },
-//     { icon: <FaCss3Alt className="w-10 h-10 text-blue-500" />, label: "CSS3" },
-//     {
-//       icon: <SiJavascript className="w-10 h-10 text-yellow-400" />,
-//       label: "JavaScript",
-//     },
-//     {
-//       icon: <FaReact className="w-10 h-10 text-blue-500" />,
-//       label: "React.js",
-//     },
-//     { icon: <SiRedux className="w-10 h-10 text-purple-500" />, label: "Redux" },
-//     {
-//       icon: <SiTailwindcss className="w-10 h-10 text-sky-400" />,
-//       label: "TailwindCSS",
-//     },
-//     {
-//       icon: <FaBootstrap className="w-10 h-10 text-purple-600" />,
-//       label: "Bootstrap",
-//     },
-//     {
-//       icon: <FaNodeJs className="w-10 h-10 text-green-600" />,
-//       label: "Node.js",
-//     },
-//     {
-//       icon: <SiExpress className="w-10 h-10 text-gray-600" />,
-//       label: "Express.js",
-//     },
-//     { icon: <FaJava className="w-10 h-10 text-red-500" />, label: "Java" },
-//     {
-//       icon: <FaPython className="w-10 h-10 text-yellow-500" />,
-//       label: "Python",
-//     },
-//     { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
-//     { icon: <SiMysql className="w-10 h-10 text-blue-600" />, label: "MySQL" },
-//     {
-//       icon: <SiPostgresql className="w-10 h-10 text-blue-800" />,
-//       label: "PostgreSQL",
-//     },
-//     { icon: <FaAws className="w-10 h-10 text-orange-500" />, label: "AWS" },
-//     { icon: <FaDocker className="w-10 h-10 text-blue-400" />, label: "Docker" },
-//     {
-//       icon: <SiJenkins className="w-10 h-10 text-red-600" />,
-//       label: "Jenkins",
-//     },
-//     { icon: <FaLinux className="w-10 h-10 text-black" />, label: "Linux" },
-//     { icon: <FaGitAlt className="w-10 h-10 text-orange-600" />, label: "Git" },
-//     {
-//       icon: <SiPostman className="w-10 h-10 text-orange-500" />,
-//       label: "Postman",
-//     },
-//     { icon: <SiVite className="w-10 h-10 text-purple-400" />, label: "Vite" },
-//     {
-//       icon: <SiOpenai className="w-10 h-10 text-teal-500" />,
-//       label: "GPT/AI Tools",
-//     },
-//   ];
-
-//   return (
-//     <section className="min-h-screen py-16 px-4 md:px-16 flex flex-col items-center bg-transparent backdrop-blur-md border border-gray-300 rounded-2xl p-8 shadow-lg relative z-10">
-//       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-//         Technical Skills
-//       </h2>
-
-//       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center w-full max-w-6xl">
-//         {skills.map((skill, i) => (
-//           <motion.div
-//             key={i}
-//             className="flex flex-col items-center cursor-pointer p-2 rounded-lg"
-//             initial={{ opacity: 0, y: 20, scale: 0.9 }}
-//             animate={{ opacity: 1, y: 0, scale: 1 }}
-//             transition={{ delay: i * 0.05, duration: 0.5, ease: "easeOut" }}
-//             whileHover={{
-//               scale: 1.3,
-//               rotate: 360,
-//               transition: { duration: 0.6, ease: "easeOut" },
-//             }}
-//           >
-//             <motion.div
-//               animate={{ y: [0, -5, 0], rotate: [0, 10, -10, 0] }}
-//               transition={{
-//                 duration: 4,
-//                 repeat: Infinity,
-//                 repeatType: "mirror",
-//                 ease: "easeInOut",
-//               }}
-//             >
-//               {skill.icon}
-//             </motion.div>
-//             <p className="text-sm mt-2 text-center">{skill.label}</p>
-//           </motion.div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
 "use client";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   FaReact,
   FaNodeJs,
-  FaAws,
-  FaDocker,
-  FaLinux,
   FaJava,
-  FaPython,
   FaGitAlt,
   FaHtml5,
   FaCss3Alt,
   FaBootstrap,
+  FaGithub,
+  FaMicrosoft,
+  FaCloud,
+  FaNpm,
+  FaCode,
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiMysql,
-  SiJenkins,
-  SiGoland,
   SiPostman,
-  SiRedux,
   SiTailwindcss,
-  SiVite,
   SiExpress,
   SiPostgresql,
   SiOpenai,
+  SiC,
+  SiVite,
 } from "react-icons/si";
 
 export default function SkillsSection() {
-  const skills = [
-    { icon: <FaHtml5 className="w-10 h-10 text-orange-600" />, label: "HTML5" },
-    { icon: <FaCss3Alt className="w-10 h-10 text-blue-500" />, label: "CSS3" },
+  const skillCategories = [
     {
-      icon: <SiJavascript className="w-10 h-10 text-yellow-400" />,
-      label: "JavaScript",
+      title: "Languages",
+      skills: [
+        { icon: <SiJavascript className="w-8 h-8 text-yellow-400" />, label: "JavaScript (ES6)" },
+        { icon: <FaJava className="w-8 h-8 text-red-500" />, label: "Java" },
+        { icon: <SiC className="w-8 h-8 text-blue-500" />, label: "C" },
+      ],
     },
     {
-      icon: <FaReact className="w-10 h-10 text-blue-500" />,
-      label: "React.js",
-    },
-    { icon: <SiRedux className="w-10 h-10 text-purple-500" />, label: "Redux" },
-    {
-      icon: <SiTailwindcss className="w-10 h-10 text-sky-400" />,
-      label: "TailwindCSS",
-    },
-    {
-      icon: <FaBootstrap className="w-10 h-10 text-purple-600" />,
-      label: "Bootstrap",
-    },
-    {
-      icon: <FaNodeJs className="w-10 h-10 text-green-600" />,
-      label: "Node.js",
+      title: "Frontend",
+      skills: [
+        { icon: <FaReact className="w-8 h-8 text-blue-400" />, label: "React.js" },
+        { icon: <FaReact className="w-8 h-8 text-blue-400" />, label: "React Native" },
+        { icon: <FaHtml5 className="w-8 h-8 text-orange-600" />, label: "HTML5" },
+        { icon: <FaCss3Alt className="w-8 h-8 text-blue-500" />, label: "CSS3" },
+        { icon: <SiTailwindcss className="w-8 h-8 text-sky-400" />, label: "Tailwind CSS" },
+        { icon: <FaCode className="w-8 h-8 text-blue-600" />, label: "Material UI" },
+        { icon: <FaBootstrap className="w-8 h-8 text-purple-600" />, label: "Bootstrap" },
+      ],
     },
     {
-      icon: <SiExpress className="w-10 h-10 text-gray-600" />,
-      label: "Express.js",
+      title: "Backend",
+      skills: [
+        { icon: <FaNodeJs className="w-8 h-8 text-green-600" />, label: "Node.js" },
+        { icon: <SiExpress className="w-8 h-8 text-gray-400" />, label: "Express.js" },
+        { icon: <FaCode className="w-8 h-8 text-pink-600" />, label: "RESTful APIs" },
+      ],
     },
-    { icon: <FaJava className="w-10 h-10 text-red-500" />, label: "Java" },
-    // {
-    //   icon: <FaPython className="w-10 h-10 text-yellow-500" />,
-    //   label: "Python",
-    // },
-    // { icon: <SiGoland className="w-10 h-10 text-teal-500" />, label: "Golang" },
-    { icon: <SiMysql className="w-10 h-10 text-blue-600" />, label: "MySQL" },
     {
-      icon: <SiPostgresql className="w-10 h-10 text-blue-800" />,
-      label: "PostgreSQL",
+      title: "AI & Cloud",
+      skills: [
+        { icon: <FaMicrosoft className="w-8 h-8 text-blue-600" />, label: "Azure AI Foundry" },
+        { icon: <SiOpenai className="w-8 h-8 text-teal-500" />, label: "Azure OpenAI" },
+        { icon: <FaCloud className="w-8 h-8 text-blue-500" />, label: "Azure Speech Services" },
+      ],
     },
-    { icon: <FaAws className="w-10 h-10 text-orange-500" />, label: "AWS" },
-    { icon: <FaDocker className="w-10 h-10 text-blue-400" />, label: "Docker" },
-    // {
-    //   icon: <SiJenkins className="w-10 h-10 text-red-600" />,
-    //   label: "Jenkins",
-    // },
-    { icon: <FaLinux className="w-10 h-10 text-black" />, label: "Linux" },
-    { icon: <FaGitAlt className="w-10 h-10 text-orange-600" />, label: "Git" },
     {
-      icon: <SiPostman className="w-10 h-10 text-orange-500" />,
-      label: "Postman",
+      title: "Databases",
+      skills: [
+        { icon: <SiMysql className="w-8 h-8 text-blue-600" />, label: "MySQL" },
+        { icon: <SiPostgresql className="w-8 h-8 text-blue-800" />, label: "PostgreSQL" },
+      ],
     },
-    { icon: <SiVite className="w-10 h-10 text-purple-400" />, label: "Vite" },
     {
-      icon: <SiOpenai className="w-10 h-10 text-teal-500" />,
-      label: "GPT/AI Tools",
+      title: "Tools",
+      skills: [
+        { icon: <FaGitAlt className="w-8 h-8 text-orange-600" />, label: "Git" },
+        { icon: <FaGithub className="w-8 h-8 text-gray-800" />, label: "GitHub" },
+        { icon: <SiVite className="w-8 h-8 text-purple-500" />, label: "VS Code" },
+        { icon: <SiPostman className="w-8 h-8 text-orange-500" />, label: "Postman" },
+        { icon: <FaNpm className="w-8 h-8 text-red-500" />, label: "npm" },
+      ],
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center py-16 ">
-      {/* Centered translucent container */}
-      {/* <div className="w-full max-w-5xl bg-white/20 backdrop-blur-md border border-gray-300 rounded-3xl p-10 shadow-lg"> */}
-      <div className="bg-transparent backdrop-blur-md border border-gray-300 rounded-2xl p-8 shadow-lg relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+    <section className="min-h-screen py-20 px-4 relative z-10">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
           Technical Skills
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 justify-items-center w-full">
-          {skills.map((skill, i) => (
+        <div className="space-y-12">
+          {skillCategories.map((category, catIndex) => (
             <motion.div
-              key={i}
-              className="flex flex-col items-center cursor-pointer p-2 rounded-lg"
-              initial={{ opacity: 0, y: 20, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ delay: i * 0.05, duration: 0.5, ease: "easeOut" }}
-              whileHover={{
-                scale: 1.3,
-                rotate: 360,
-                transition: { duration: 0.6, ease: "easeOut" },
-              }}
+              key={catIndex}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: catIndex * 0.1 }}
+              className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl p-8 shadow-xl"
             >
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800 border-b border-gray-200 pb-2 inline-block">
+                {category.title}
+              </h3>
+
               <motion.div
-                animate={{ y: [0, -5, 0], rotate: [0, 10, -10, 0] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatType: "mirror",
-                  ease: "easeInOut",
-                }}
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
               >
-                {skill.icon}
+                {category.skills.map((skill, index) => (
+                  <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 2,
+                    }}
+                    className="flex flex-col items-center justify-center p-4 rounded-xl bg-white/5 border border-gray-200 cursor-pointer group hover:bg-white/20 transition-colors"
+                  >
+                    <div className="mb-3 transform group-hover:scale-110 transition-transform duration-300">
+                      {skill.icon}
+                    </div>
+                    <span className="text-sm font-medium text-gray-700 text-center group-hover:text-gray-900">
+                      {skill.label}
+                    </span>
+                  </motion.div>
+                ))}
               </motion.div>
-              <p className="text-sm mt-2 text-center">{skill.label}</p>
             </motion.div>
           ))}
         </div>
